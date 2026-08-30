@@ -100,7 +100,7 @@ export default function CollegePage() {
             <StatCard label="UG Fees" value={getINR(fees_ug_inr)} />
             <StatCard
               label="Avg. Placement"
-              value={getINR(placement_avg_lpa)}
+              value={`${placement_avg_lpa} LPA`}
             />
             <StatCard label="Rating" value={rating} />
             <StatCard label="NIRF Rank" value={valueOrFallback(nirf_rank)} />
