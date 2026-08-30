@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useRef, useState, type ChangeEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type ChangeEvent } from "react";
 import { SpriteIcon } from "../SpriteIcon";
 import { useDispatch, useSelector } from "react-redux";
 import type { RootState } from "@/src/store/store";
@@ -23,6 +23,8 @@ export function SearchBar() {
     );
     return matches.slice(0, 6);
   }, [colleges, text]);
+
+
 
   const showSuggestions = text.trim().length > 0;
 
@@ -83,7 +85,7 @@ export function SearchBar() {
           type="text"
         />
       </div>
-      <button className="text-white rounded-xl active:bg-rose-300 ml-4 font-semibold bg-rose-500 py-3 px-6">
+      <button className="text-white hidden md:block rounded-xl active:bg-rose-300 ml-4 font-semibold bg-rose-500 py-3 px-6">
         Search
       </button>
       {showSuggestions && (

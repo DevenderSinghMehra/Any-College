@@ -3,6 +3,7 @@ import { QuickFilter } from "./QuickFilter/QuickFilter";
 import { SearchBar } from "./SearchBar";
 import { SpriteIcon } from "../SpriteIcon";
 export function NavBar() {
+  
   return (
     <nav className="flex justify-center p-4 w-full items-center gap-4 border-b border-slate-100 bg-white px-4 text-sm shadow-[0_2px_7px_rgba(15,23,42,0.06)]">
       <Logo />

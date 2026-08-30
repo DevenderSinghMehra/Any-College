@@ -9,11 +9,7 @@ export function Logo() {
     >
       <h1 className="font-geom text-black">AnyCollege</h1>
 
-      <img
-        className="shrink-0 w-8"
-        src="/houseLogo.jpg"
-        alt="any-college icon"
-      />
+      <img className="w-8" src="/houseLogo.jpg" alt="any-college icon" />
     </Link>
   );
 }
